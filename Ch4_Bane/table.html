@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  	<meta charset="utf-8">
+  	<title>Table Basics</title>
+  	<style>
+		   table, tr, th, td{border:1px solid black;}
+		/* styling the 3rd column of the table */
+		col:nth-child(3) {background-color: yellow;}
+ 	</style>
+</head>
+
+<body>
+<div class="container">
+	<table>
+	<caption>My Reading List</caption>
+	<thead>
+	<tr>
+		<th>Author(s)</th>
+		<th>Book Title</th>
+		<th>Read?</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr> <!-- Show before adding border -->
+		<td>John Steinbeck</td>
+		<td><i>The Grapes of Wrath</i></td>
+		<td>Yes</td>
+	</tr>
+	</tbody>
+	<tfoot>
+		<td colspan="3">Updated 5 March 2013</td>
+
+	</tfoot>
+	</table>
+
+</div> <!-- end .container -->
+</body>
+</html>
+
+
