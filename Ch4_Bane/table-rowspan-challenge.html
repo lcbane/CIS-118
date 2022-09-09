@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Table: rowspan Challenge</title>
+	    <style>
+	    table, th, td{
+	    	border: 1px solid #333;
+	    	}
+	    </style>
+
+    </head>
+    <body>
+		<table>
+		<caption>My Favorite Books</caption>
+		<colgroup>
+			<col class="author">
+			<col class="book">
+			<col class="read">
+		</colgroup>
+		<thead>
+		<tr>
+			<th>Author(s)</th>
+			<th>Book Title</th>
+			<th>Read?</th>
+		</tr>
+		</thead>
+		<tr>
+			<td rowspan="2">John Steinbeck</td>
+			<td>The Grapes of Wrath</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<!-- missing cell -->
+			<td>Of Mice and Men</td>
+			<td>Yes</td>
+		</tr>
+<tr>
+	<td rowspan="3">H.G. Wells</td>
+	<td>The Invisible Man</td>
+	<td>No</td>
+</tr>
+		<tr>
+			<!-- missing cell -->
+			<td>The Time Machine</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<!-- missing cell -->
+			<td>The War of the Worlds</td>
+			<td>Yes</td>
+		</tr>
+		</tbody>
+		<tfoot>
+		<tr>
+			<td colspan="3">Updated March 5, 2013</td>
+		</tr>
+		</tfoot>
+		</table>
+    </body>
+</html>
