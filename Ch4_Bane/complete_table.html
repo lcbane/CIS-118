@@ -4,7 +4,9 @@
   	<meta charset="utf-8">
   	<title>Complete Reading List</title>
   	<style>
-		table, th, td{border:1px solid goldenrod;}
+		table, th, td{border:1px solid black;}
+		col:nth-child(3) {background-color: yellow;}
+		tfoot{background-color: white;}
  	</style>
 </head>
 
@@ -12,6 +14,11 @@
 <div class="container">
 	<table>
 	<caption>My Reading List</caption>
+	<colgroup>
+		<col class="author">
+		<col class="book">
+		<col class="read">
+	</colgroup>
 	<thead>	
 		<tr>
 			<th scope="col">Author(s)</th>
