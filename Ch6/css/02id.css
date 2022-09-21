@@ -3,6 +3,7 @@
 padding: 10px;
 border: 1px solid black;
 width:  260px;
+  background-color: green;
 }
 .aside {
 margin-left: 20px; 
@@ -15,4 +16,10 @@ color:  red;
 }
 /* NEW CSS GOES BELOW */
 /* for our CSS, we'll use the # for the "id" selector */
-
+#american {
+    background-color: lightblue;
+}
+#japanese {
+    background-color: lightsalmon;
+}
+ 
