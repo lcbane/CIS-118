@@ -1,0 +1,49 @@
+/* FLOAT
+demo default CSS [don't touch]
+
+scroll down to enter in example code
+-------------------------------------------------- */.container{width:960px;margin:0 auto}
+
+.main,.sidebar{padding:10px}
+.header{
+	margin-bottom: 10px;}
+.header,.primary{border:2px solid #333; background: #ececec;}
+.main{background-color:#ADD8E6;margin: 10px;}
+.sidebar{background-color:#FFA07A;margin: 10px;}
+.footer{border:2px solid #333;background:#8cdb97;margin-top: 10px;}
+
+
+/* FLOAT CONTENT
+-----------------------------------------------*/
+.main {
+	float: left;
+	width: 620px;
+}
+.main img{
+	float: inherit;
+}
+.sidebar img{
+	float: right;
+}
+.sidebar {
+	float:right;
+	width: 290px
+}
+
+/* CLEAR FLOATS
+-----------------------------------------------*/
+.footer{
+	clear: both;
+}
+
+/*clearfix method */
+.group:after{
+	content: " "; /*make sure you have a space */
+	display: block;
+	clear: both;
+}
+/*overflow method */
+.primary {
+	overflow: hidden;
+	width: 100%;
+}

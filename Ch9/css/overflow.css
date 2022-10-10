@@ -1,0 +1,23 @@
+/* OVERFLOW
+demo default CSS [don't touch] 
+-------------------------------------------------- */
+.container{width:630px;margin:0 auto}
+.characters{background:#333;}
+.group:after{
+	content: " ";
+	display: block;
+	clear: both;
+}
+.box{width:300px;background:#f5f4f0;margin:10px 0px 10px 10px;float: left;
+}
+.box:nth-last-child{
+	margin-left: 5px;
+}
+.box img { float: inherit; }
+
+
+
+/* ============= ENTER EXAMPLE CODE BELOW ============= */
+
+/* OVERFLOW
+-----------------------------------------------*/
