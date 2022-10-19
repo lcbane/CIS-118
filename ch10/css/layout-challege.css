@@ -1,0 +1,42 @@
+/*
+	=LAYOUT 
+	 WRITE YOUR CSS RULES BELOW
+--------------------------------------*/
+.container{
+	width: 960px;
+	margin:0px auto; /* centers content on screen */
+}
+
+.header{
+	width: 460px;
+	margin: 0 10px;
+	float: left;
+}
+.navbar{
+	width: 460px;
+	margin: 0 10px;
+	float: left;
+}
+
+.primary{
+	width: 620px;
+	margin: 0 10px;
+	float: left;
+}
+.secondary {
+	width: 300px;
+	margin: 0 10px;
+	float: left;
+}
+.footer{
+	width: 940px;
+	margin: 0 10px;
+	clear: both; /*use this value to clear floats above container */
+}
+/*clearing nested floats in containing element */
+
+.group:after{
+	content: " ";
+	display: block;
+	clear: both;
+}

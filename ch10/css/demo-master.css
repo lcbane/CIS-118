@@ -1,0 +1,16 @@
+*{
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+p,dl,ol,ul,form{font-family:Georgia, serif;line-height:1.5em}
+h1,h2,h3{margin:0}
+body{background:#777}
+div[role=banner]{background:#eee}
+div[role=main]{background:#ddd}
+div[role=contentinfo]{background:#ccc}
+.container{background:#aaa;}
+.header,.navbar,.primary,.secondary{background:#fff}
+.footer{background:#cecece}
+
+.col-3{background:#9ed0c2;}

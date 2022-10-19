@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	min-width: 320px;
+}
+.container{
+	width: 90%;
+	max-width: 960px;
+	margin: 10px auto;
+	border: 1px solid #333;
+	border-radius: 6px;
+	
+}
+
+.description{
+ 	width: auto;
+	margin: 1.0416667%; /* ~10px */
+	background: #efefef;
+
+
+}
+
