@@ -1,0 +1,12 @@
+form {
+width: 300px;
+}
+label {
+display: block;
+margin-bottom: 10px;
+text-align: right;
+}
+label input{
+	float: right;
+	margin-left: 5px;
+}

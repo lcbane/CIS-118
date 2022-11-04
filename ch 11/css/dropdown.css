@@ -1,0 +1,28 @@
+/*Link style order: LoVHAte
+------------------------------------ */
+a,a:link		{color: #38adda;}
+a:visited		{color: #2d8db2;}
+a:focus,a:hover	{color: #efefef;background:#333;}
+a:active		{color: #333; background:#F7A236;}
+
+/*
+	Horiztonal Navigation bar
+------------------------------------ */
+.menu ul{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.menu a{
+    display:inline-block;
+    padding:10px;
+}
+
+/*
+	Drop-Down Styles
+------------------------------------ */
+

@@ -1,0 +1,147 @@
+/*Link style order: LoVHAte
+------------------------------------ */
+a,a:link		{color: #38adda;}
+a:visited		{color: #2d8db2;}
+a:focus,a:hover	{color: #efefef;background:#333;}
+a:active		{color: #333; background:#F7A236;}
+
+/*
+	Horiztonal Navigation bar
+------------------------------------ */
+.dropdown-toggle:after{
+	content: " +";
+}
+.menu-link {
+	display: none;
+	float: right;
+	text-decoration: none;
+	padding: 19px 10px;
+}
+
+.menu ul { 
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	position: relative;
+	text-align:center;
+	    border:1px solid #ccc;
+    border-width:1px 0;
+}
+.menu > li > ul.sub-menu {
+	min-width: 10em;
+	padding: 4px 0;
+	background-color: #f4f4f4;
+}
+.sub-menu li a{
+	border-bottom:1px solid #ccc;
+}
+.menu > ul > li { 
+	display: inline-block;
+}
+.menu ul li a { 
+	display: block;
+}
+.menu ul li > a { 
+    padding:10px;
+}
+.menu ul ul { 
+	display: none; 
+	position: absolute; 
+	top:100%;
+	min-width: 160px;
+	background-color: #f4f4f4;
+	border: 1px solid #ccc;
+}
+.menu ul li:hover > ul {
+	display: block;
+}
+.menu ul ul > li {
+	position: relative;
+}
+.menu ul ul > li a {
+	padding: 5px 15px 5px 10px;
+	height: auto;
+	background-color: #f4f4f4;
+}
+li.has-submenu:hover{
+	background:#ddd;
+}
+.menu ul ul > li a:hover {
+	background-color: #333;
+	color: #fff;
+}
+.menu ul ul ul {
+	position: absolute; 
+	left: 100%; 
+	top:0;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    a.menu-link {
+		display: block;
+		color: #fff;
+		background-color: #38adda;
+	}
+	.menu {
+		clear: both;
+		min-width: inherit;
+		float: none;
+	}
+	.menu, .menu > ul ul {
+		overflow: hidden;
+		max-height: 0;
+		background-color: #f4f4f4;
+	}
+	.menu > li > ul.sub-menu {
+		padding: 0px;
+		border: none;
+	}
+	.menu.active, .menu > ul ul.active {
+		max-height: 55em;
+	}
+	.menu ul {
+		display: inline;
+		text-align: left;
+	}
+	.menu > ul {
+		border-top: 1px solid #808080;
+	}
+	.menu li, .menu > ul > li {
+		display: block;
+	}
+	.menu li a {
+		display: block;
+		padding: 0.8em;
+		border-bottom: 1px solid #808080;
+		position: relative;
+	}
+	.menu li.has-submenu > a:after {
+		content: '+';
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		padding: 0.55em 0.5em;
+	}
+	.menu li.has-submenu > a.active:after {
+		content: "-";
+	}
+	.menu ul ul > li a {
+		background-color: #e4e4e4;
+		height:58px;
+		padding: 19px 18px 19px 30px;
+	}
+	.menu ul ul, .menu ul ul ul {
+		display: inherit;
+		position: relative;
+		left: auto; 
+		top:auto;
+	}
+}
+
+
+
+
+

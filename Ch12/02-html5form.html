@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/html5form.css">
+</head>
+<body>
+<div class="container">
+<h1>HTML 5 Form</h1>
+<form action="http://example.com/processform.php" method="post">
+	<fieldset>
+	<legend>Schedule An Meeting</legend>
+	<dl>
+	<!-- set to be required -->
+	<!-- set to be placeholder -->
+	<dt><label for="form-name">Name </label></dt>
+	<dd><input type="text" name="name" id="form-name"></dd>
+	
+	<!-- set to be required -->
+	<!-- set to be placeholder -->
+	<!-- set type to email -->
+	<dt><label for="form-email">Email </dt>
+	<dd><input type="text" name="email" id="form-email"></dd>
+	
+	<!-- set type to tel -->
+	<dt><label for="form-phone">Phone </label></dt>
+	<dd><input type="text" name="phone" id="form-phone"></dd>
+	
+	<!-- set type to url -->
+	<dt><label for="form-url">Website </label></dt>
+	<dd><input type="text" name="url" id="form-url"></dd>
+	
+	<!-- set type to date -->
+	<dt><label for="form-date">Date </label></dt>
+	<dd><input type="text" name="date" id="form-date"></dd>
+	
+	<!-- set type to time -->
+	<dt><label for="form-time">Time </label></dt>
+	<dd><input type="text" name="time" id="form-time"></dd>
+	</dl>
+	</fieldset>
+
+	<p><input type="submit" value="Submit"></p>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Basics</title>
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/form.css">
+<style>textarea{width: 50%; height: 6em}</style>
+</head>
+<body>
+<div class="container">
+<h1>Form Basics</h1>
+
+
+<!-- TEXT + PASSWORD -->
+
+
+
+<!-- RADIO BUTTON -->
+<form action="http://mywebsite.com/form-radio" method="post">
+<ul>
+    <li>What size drink: <br>
+	<!-- enter code here -->
+    </li>
+</ul>
+</form>
+
+
+<!-- CHECKBOX -->
+<form action="http://mywebsite.com/form-checkbox.php" method="post">
+<ul>
+	<li>What fruit do you like?
+	<!-- enter code here -->
+</ul>
+</form>
+
+
+<!-- FILE -->
+<form action="http://mywebsite.com/form-upload.php" method="post">
+<ul>
+	<li>Upload Resume <input type="file" name="resume"><br>
+	<!-- enter code here -->
+	</li>
+</ul>
+ </form>
+ 
+ 
+<!-- SUBMIT -->
+ <form action="http://mywebsite.com/form-submit.php" method="post">
+ 	<!-- enter code here -->
+ </form>
+ 
+ 
+<!-- TEXTAREA -->
+ <form action="http://mywebsite.com/form-comment.php" method="post">
+ <ul>
+ <li>Leave a Comment 
+	<!-- enter code here -->
+ </ul>
+ </form>
+
+
+<!-- SELECT + OPTION -->
+<form action="http://mywebsite.com/form-menu.php" method="post">
+<li>What Month Were You Born?
+	<!-- enter code here -->
+</li>
+</form>
+ 
+<!-- LABEL wrapping input-->
+<form method="post" action="http://mywebsite.com/form-label.php">
+<ul>
+	<li>
+	<!-- enter code here -->
+	</li>
+</ul>
+</form>
+ 
+<!-- LABEL and INPUT separate with for and id attributes -->
+<form method="post" action="http://mywebsite.com/form-label.php">
+ <ul>
+ 	<li>
+ 	<!-- enter code here -->
+ 	</li>
+ </ul>
+ </form>
+ 
+ <!-- Aside showing lable placement for radio buttons -->
+<form method="post" action="http://mywebsite.com/form-aside.php">
+<ul>
+<li>
+What size drink: <br>
+<input id="form-large" type="radio" name="drinksize" value="large"><label for="form-large"> Large</label>
+<input id="form-medium" type="radio" name="drinksize" value="medium"><label for="form-medium"> Medium</label>
+<input id="form-small" type="radio" name="drinksize" value="small"><label for="form-small"> Small</label>
+</li>
+</ul>
+</form>
+
+<!-- FIELDSET -->
+<form method="post" action="http://mywebsite.com/form-fieldset.php">
+	<!-- enter code here -->
+	
+	<ul>
+		<li><label>Street: <input type="text" name="address"></label></li>
+		<li><label>City: <input type="text" name="city"></label></li>
+		<li><label>Zip Code: <input type="text" name="zip"></label></li>
+	</ul>	
+	
+	
+</form>
+
+
+</div>
+</body>
+</html>

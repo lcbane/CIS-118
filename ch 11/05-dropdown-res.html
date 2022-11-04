@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+   <title>Dropdown</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/dropdown-res.css">
+</head>
+
+<body>
+  <h1>Drop-Down Menu</h1>
+
+  <a class="menu-link" href="#menu">Menu</a>
+
+<nav id="menu" class="menu" role="navigation">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Single Page</a></li>
+		<li class="has-submenu"><a class="dropdown-toggle" href="#">Main Topic</a>
+			<ul class="sub-menu">
+				<li><a href="">Sub-topic 1</a></li>
+				<li><a href="">Sub-topic 2</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+jQuery( document ).ready( function( $ ) {
+	
+		$('body').addClass('js');
+		  var $menu = $('#menu'),
+		  	  $menulink = $('.menu-link'),
+		  	  $menuTrigger = $('.has-submenu > a');
+
+		$menulink.click(function(e) {
+			e.preventDefault();
+			$menulink.toggleClass('active');
+			$menu.toggleClass('active');
+		});
+
+		$menuTrigger.click(function(e) {
+			e.preventDefault();
+			var $this = $(this);
+			$this.toggleClass('active').next('ul').toggleClass('active');
+		});
+
+		
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+/*Link style order: LoVHAte
+------------------------------------ */
+a,a:link		{color: #38adda;}
+a:visited		{color: #2d8db2;}
+a:focus,a:hover	{color: #efefef;background:#333;}
+a:active		{color: #333; background:#F7A236;}
+
+.current a{
+	background: #333;
+	color: #efefef;
+}
+
+/* Horiztonal Navigation Styling
+------------------------------------ */
+
