@@ -2,17 +2,24 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="Author" content="YOUR NAME HERE"/>
+	<meta name="Author" content="Linda Celet Bane"/>
 	<title>Contact : YOUR NAME HERE</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <link rel="stylesheet" href="css/master.css">
 <link rel="stylesheet" href="css/html5form.css">
+	<style>
+		ul {
+			list-style-type: none; /* Remove bullets */
+  			padding: 0; /* Remove padding */
+  			margin: 0; /* Remove margins */
+		}
+	</style>
 </head>
 <body>
 <div class="container">
 <h1>Contact</h1>
-<p>Filling out this form will send the form data to YOUR NAME HERE.</p>
+<p>Filling out this form will send the form data to Linda Celet Bane.</p>
 <form method="post" action="contact_process.php">
 	<fieldset>
 	<legend>Contact Me</legend>
@@ -21,23 +28,29 @@
 	- unordered list
 	- definition list
 	- using only form elements -->
-
+<ul>
 <!-- NAME
 I'm supplying the first lable and input to help you get started
 label and input for Name (Required)
 -->
-<label for="form-name">Full Name </label>
-<input type="text" name="name" id="form-name" required/>
+<li><label for="form-name">Full Name </label>
+	<input type="text" name="name" id="form-name" required/></li>
 
 <!--EMAIL
 label and input for Email (Required) -->
-
+<li><label for="form-email">Email </label>
+	<input type="email" name="email" id="form-email" required/></li>
+		
 <!-- Subject
 label and input for Subject -->
+<li><label for="form-subject">Subject </label>
+	<input type="subject" name="subject" id="form-subject" required//></li>
 
 <!-- Message
 A textarea box the visitor can write what they need-->
-
+<li><label for="form-message">Message </label>
+	<input type="textarea" name="message" id="form-message" required//></li>
+</ul>
 		<span>
 		  <input type="submit" name="Submit" value="Submit" />
 		  
