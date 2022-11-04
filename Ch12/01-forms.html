@@ -13,14 +13,21 @@
 
 
 <!-- TEXT + PASSWORD -->
-
+<form action="http://mywebsite.com/form-processor.php" method="post">
+<ol>
+	<li>Name <input type="text" name="name" size="20"></li>
+	<li>Password <input type="password" name="password"></li>
+</ol>
+</form>
 
 
 <!-- RADIO BUTTON -->
 <form action="http://mywebsite.com/form-radio" method="post">
 <ul>
     <li>What size drink: <br>
-	<!-- enter code here -->
+    <input type="radio" name="drinksize" value="large" checked="checked"> Large
+    <input type="radio" name="drinksize" value="medium"> Medium
+    <input type="radio" name="drinksize" value="small"> Small
     </li>
 </ul>
 </form>
@@ -29,8 +36,10 @@
 <!-- CHECKBOX -->
 <form action="http://mywebsite.com/form-checkbox.php" method="post">
 <ul>
-	<li>What fruit do you like?
-	<!-- enter code here -->
+<li>What fruit do you like?
+<input type="checkbox" name="fruit" value="apple"> Apple
+<input type="checkbox" name="fruit" value="banana"> Banana
+<input type="checkbox" name="fruit" value="Orange"> Orange
 </ul>
 </form>
 
@@ -39,54 +48,46 @@
 <form action="http://mywebsite.com/form-upload.php" method="post">
 <ul>
 	<li>Upload Resume <input type="file" name="resume"><br>
-	<!-- enter code here -->
+    <input type="submit" value="Upload">
 	</li>
 </ul>
  </form>
  
  
-<!-- SUBMIT -->
- <form action="http://mywebsite.com/form-submit.php" method="post">
- 	<!-- enter code here -->
- </form>
- 
- 
 <!-- TEXTAREA -->
+ <form action="http://mywebsite.com/form-submit.php" method="post">
+ 	<input type="submit" value="Submit My Application">
+ </form>
  <form action="http://mywebsite.com/form-comment.php" method="post">
  <ul>
- <li>Leave a Comment 
-	<!-- enter code here -->
+ <li>Leave a Comment <textarea name="comment">I think...</textarea>
  </ul>
  </form>
 
 
 <!-- SELECT + OPTION -->
 <form action="http://mywebsite.com/form-menu.php" method="post">
-<li>What Month Were You Born?
-	<!-- enter code here -->
-</li>
-</form>
+ <li>What Month Were You Born?
+ <select name="month">
+ 	<option value="January">January</option>
+	<option value="February">February</option>
+ </select>
+ </li>
+ </form>
  
-<!-- LABEL wrapping input-->
-<form method="post" action="http://mywebsite.com/form-label.php">
-<ul>
-	<li>
-	<!-- enter code here -->
-	</li>
-</ul>
-</form>
- 
-<!-- LABEL and INPUT separate with for and id attributes -->
-<form method="post" action="http://mywebsite.com/form-label.php">
+  <!-- LABEL-->
+ <form>
  <ul>
- 	<li>
- 	<!-- enter code here -->
- 	</li>
+ 	<li><label>Name <input type="text" name="name"></label></li>
+ </ul>
+ </form>
+<form>
+ <ul>
+ 	<li><label for="form-name">Name </label><input id="form-name" type="text" name="name"></li>
  </ul>
  </form>
  
- <!-- Aside showing lable placement for radio buttons -->
-<form method="post" action="http://mywebsite.com/form-aside.php">
+<form>
 <ul>
 <li>
 What size drink: <br>
@@ -97,20 +98,17 @@ What size drink: <br>
 </ul>
 </form>
 
-<!-- FIELDSET -->
 <form method="post" action="http://mywebsite.com/form-fieldset.php">
-	<!-- enter code here -->
-	
-	<ul>
-		<li><label>Street: <input type="text" name="address"></label></li>
-		<li><label>City: <input type="text" name="city"></label></li>
-		<li><label>Zip Code: <input type="text" name="zip"></label></li>
-	</ul>	
-	
-	
+<fieldset>
+<legend>Address</legend>
+<ul>
+	<li><label>Street: <input type="text" name="address"></label></li>
+	<li><label>City: <input type="text" name="city"></label></li>
+	<li><label>Zip Code: <input type="text" name="zip"></label></li>
+</ul>	
+</fieldset>
 </form>
-
-
+<br><br>
 </div>
 </body>
 </html>
